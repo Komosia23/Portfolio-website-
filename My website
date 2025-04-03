@@ -1,0 +1,91 @@
+Hi, I'm <span className="text-primary">Joshua Komosia</span>
+          </h1>
+          <h2 className="text-xl font-medium text-muted-foreground md:text-2xl">
+            Software Developer & Designer
+          </h2>
+          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+            I create modern web applications with a focus on user experience and
+            performance.
+          </p>
+        </div>
+        <div className="flex gap-4 mt-6">
+          <Button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
+            Contact Me <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+          <Button variant="outline" asChild>
+            <a href="#projects">View Work</a>
+          </Button>
+        </div>
+        <div className="flex gap-4 mt-8">
+          <Button size="icon" variant="ghost" className="rounded-full">
+            <Github className="h-5 w-5" />
+          </Button>
+          <Button size="icon" variant="ghost" className="rounded-full">
+            <Linkedin className="h-5 w-5" />
+          </Button>
+          <Button size="icon" variant="ghost" className="rounded-full">
+            <Mail className="h-5 w-5" />
+          </Button>
+        </div>
+      </div>
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
+        <Button variant="ghost" size="icon" className="rounded-full" onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+        <div className="space-y-6">
+          <div className="flex items-center gap-4">
+            <User className="h-8 w-8 text-primary" />
+            <h3 className="text-2xl font-bold">Who I Am</h3>
+          </div>
+          <p className="text-muted-foreground">
+            I'm a software developer with 5 years of experience in creating responsive 
+            and performant web applications. I'm passionate about clean code, user experience, 
+            and staying up-to-date with the latest technologies. When I'm not coding, you'll 
+            find me hiking, reading, or experimenting with new recipes.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 gap-6">
+          <Card>
+            <CardHeader className="flex flex-row items-center gap-4 pb-2">
+              <GraduationCap className="h-6 w-6 text-primary" />
+              <div>
+                <CardTitle>Education</CardTitle>
+                <CardDescription>My academic background</CardDescription>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                <div>
+                  <h4 className="font-semibold">Bachelor of Computer Science</h4>
+                  <p className="text-sm text-muted-foreground">
+                    University of Technology • 2015-2019
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="flex flex-row items-center gap-4 pb-2">
+              <Briefcase className="h-6 w-6 text-primary" />
+              <div>
+                <CardTitle>Work Experience</CardTitle>
+                <CardDescription>My professional journey</CardDescription>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold">Senior Frontend Developer</h4>
+                  <p className="text-sm text-muted-foreground">
+                    TechCorp Inc. • 2021-Present
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Full Stack Developer</h4>
+                  <p className="text-sm text-muted-foreground">
+                    WebSolutions LLC • 2019-2021
+                  </p>
+                </div>
