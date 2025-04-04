@@ -1,91 +1,98 @@
-Hi, I'm <span className="text-primary">Joshua Komosia</span>
-          </h1>
-          <h2 className="text-xl font-medium text-muted-foreground md:text-2xl">
-            Software Developer & Designer
-          </h2>
-          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-            I create modern web applications with a focus on user experience and
-            performance.
-          </p>
-        </div>
-        <div className="flex gap-4 mt-6">
-          <Button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
-            Contact Me <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-          <Button variant="outline" asChild>
-            <a href="#projects">View Work</a>
-          </Button>
-        </div>
-        <div className="flex gap-4 mt-8">
-          <Button size="icon" variant="ghost" className="rounded-full">
-            <Github className="h-5 w-5" />
-          </Button>
-          <Button size="icon" variant="ghost" className="rounded-full">
-            <Linkedin className="h-5 w-5" />
-          </Button>
-          <Button size="icon" variant="ghost" className="rounded-full">
-            <Mail className="h-5 w-5" />
-          </Button>
-        </div>
-      </div>
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
-        <Button variant="ghost" size="icon" className="rounded-full" onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-        <div className="space-y-6">
-          <div className="flex items-center gap-4">
-            <User className="h-8 w-8 text-primary" />
-            <h3 className="text-2xl font-bold">Who I Am</h3>
-          </div>
-          <p className="text-muted-foreground">
-            I'm a software developer with 5 years of experience in creating responsive 
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joshua Komosia Personal| Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+         <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        <nav>
+            <div class="logo">
+                <h1>JOSHUA KOMOSIA</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Joshua Komosia, and I'm a software developer with 5 years of experience in creating responsive 
             and performant web applications. I'm passionate about clean code, user experience, 
             and staying up-to-date with the latest technologies. When I'm not coding, you'll 
-            find me hiking, reading, or experimenting with new recipes.
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 gap-6">
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4 pb-2">
-              <GraduationCap className="h-6 w-6 text-primary" />
-              <div>
-                <CardTitle>Education</CardTitle>
-                <CardDescription>My academic background</CardDescription>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div>
-                  <h4 className="font-semibold">Bachelor of Computer Science</h4>
-                  <p className="text-sm text-muted-foreground">
-                    University of Technology • 2015-2019
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+            find me hiking, reading, or experimenting with new recipes..</p>
+        <button class="cta-button">Download Resume</button>
+    </section>
 
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4 pb-2">
-              <Briefcase className="h-6 w-6 text-primary" />
-              <div>
-                <CardTitle>Work Experience</CardTitle>
-                <CardDescription>My professional journey</CardDescription>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold">Senior Frontend Developer</h4>
-                  <p className="text-sm text-muted-foreground">
-                    TechCorp Inc. • 2021-Present
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Full Stack Developer</h4>
-                  <p className="text-sm text-muted-foreground">
-                    WebSolutions LLC • 2019-2021
-                  </p>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="project1-image.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A brief description of Project 1.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="project2-image.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A brief description of Project 2.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Joshua Komosia | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+Manage cookies
+Do not share my personal information
